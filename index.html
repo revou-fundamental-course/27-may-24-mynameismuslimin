@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- character set  -->
+  <meta charset="UTF-8">
+
+  <!-- let browser know website is optimized for mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- web title -->
+  <title>Mini Coding Project</title>
+
+  <!-- fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- import google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- my css -->
+  <link rel="stylesheet" href="./css/css-reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- header-menu -->
+  <header>
+    <section id="header-section">
+      <div class="header-container">
+        <!-- brand -->
+        <div><a href="index.html"><img class="logo" src="https://s3-ap-southeast-1.amazonaws.com/revou-blog/2019/12/Logo-RevoU-5.png" alt="Gambar RevoU"></a></div>
+        <!-- destktop navigation -->
+        <nav>
+          <a href="index.html" class="mybutton">Home</a>
+          <a href="#" class="mybutton">Profile</a>
+          <a href=#" class="mybutton"> Portofolio</a>
+          <a href="#" class="mybutton">Message Us</a>
+        </nav>
+        <!-- mobile navigation -->
+        <div class="mob-wrapper">
+          <img src="https://www.svgrepo.com/show/312300/hamburger-menu.svg" alt="=" style="width: 40px;" class="burgermenu">
+          <div class="mob-nav">
+            <a href="index.html" class="navbutton">Home</a>
+            <a href="#" class="navbutton">Profile</a>
+            <a href="#" class="navbutton">Portofolio</a>
+            <a href="#" class="navbutton">Message Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- main-menu -->
+  <main>
+    <!-- hero -->
+    <section id="hero-section">
+      <div class="container">
+        <div class="hero-01">
+          <h1 class="hero-title">Hi <span id="username"> </span>, Selamat Datang</h1>
+          <p class="hero-p">Ini adalah website mini coding project.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- fasilitas -->
+    <section id="fasilitas-section">
+      <div class="container">
+        <div class="fasilitas">
+          <h2 class="fasilitas-title"><i class="fa-solid fa-building"></i> Our Facility</h2>
+          <div class="fasilitas-gallery">
+            <div class="object">
+              <img class="object-img" src="https://i.pinimg.com/736x/04/e0/45/04e0450ef9910619a0aa03b30f9ca14c.jpg" width="250" height="250" alt="Kota Jakarta">
+              <h3 class="object-font">Rafting Trip</h3>
+            </div>
+            <div class="object">
+              <img class="object-img" src="https://img.lovepik.com/png/20231114/mountains-and-tree-clipart-forest-with-trees-and-mountains-cartoon_591553_wh860.png" width="250" height="250" alt="Kota Bandung">
+              <h3 class="object-font">Hiking</h3>
+            </div>
+            <div class="object">
+              <img class="object-img" src="https://png.pngtree.com/thumb_back/fh260/background/20230331/pngtree-fish-coral-underwater-world-cartoon-illustration-image_2127501.jpg" width="250" height="250" alt="Kota Surabaya">
+              <h3 class="object-font">Skydiving</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="fasilitas-line">
+    </section>
+
+    <!-- message-->
+    <section id="message-section">
+      <div class="container">
+        <div class="message-title">
+          <h2><i class="fa-solid fa-envelope"></i> Message Us</h2>
+        </div>
+        <div class="message-box">
+          <div class="input-box">
+            <!-- form input -->
+            <form name="input-form" onsubmit="send(); return false">
+              <table>
+                <tbody>
+                  <tr>
+                    <td><label for="name1">Nama</label></td>
+                    <td> :
+                      <input type="text" name="name1" id="name1" class="label-name" placeholder="Masukan Nama" required>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="date1">Tanggal Lahir</label></td>
+                    <td> :
+                      <input type="date" name="date1" id="date1" class="label-date" required>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="gender1">Jenis Kelamin</label></td>
+                    <td> :
+                      <input type="radio" name="gender1" id="male1" value="Laki-laki" class="male-gender"
+                        required><label for="male">Laki-laki</label>
+                      <input type="radio" name="gender1" id="female1" value="Perempuan" required
+                        class="female-gender"><label for="female">Perempuan</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-message"><label for="message1">Pesan</label></td>
+                    <td> :
+                      <textarea name="message1" id="message1" cols="30" rows="5" class="textarea-message"
+                        placeholder="Tuliskan Pesan"></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <input type="submit" name="submit" value="Kirim">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </div>
+          <!-- form output -->
+          <div class="output-box">
+            <table>
+              <tr>
+                <td><label for="time">Waktu</label></td>
+                <td>:
+                  <span id="time"></span>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="name2">Nama</label></td>
+                <td>:
+                  <span id="name2"></span>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="date2">Tanggal Lahir</label></td>
+                <td>:
+                  <span id="date2"></span>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="gender2">Jenis Kelamin</label></td>
+                <td>:
+                  <span id="gender2"></span>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="message2">Pesan</label></td>
+                <td>:
+                  <span id="message2"></span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer-menu -->
+  <footer>
+    <section id="footer-section">
+      <div class="container">
+        <div class="footer-location">
+          <!-- left -->
+          <div class="footer-left">
+            <a href="#" target="_blank"><i class="fa-solid fa-envelope fa-2x"></i></a>
+            <a href="#" target="_blank"><i
+                class="fa-brands fa-github fa-2x"></i></a>
+            <a href="#" target="_blank"><i
+                class="fa-brands fa-linkedin fa-2x"></i></a>
+            <a href="#" target="_blank"><i class="fa-solid fa-blog fa-2x"></i></a>
+          </div>
+          <!-- center -->
+          <div class="footer-center">
+            <p class="p-one"> RevoU - All rights reserved.</p>
+            <p class="p-two"><i class="fa-solid fa-circle-info"></i> Software Engineering Fundamental Course</p>
+          </div>
+          <!-- right -->
+          <div class="footer-right">
+            <p><i class="fa-solid fa-code"></i> Powered by HTML/CSS and JavaScript</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <!-- burgermenu cdn -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+
+  <!-- check visitor name -->
+  <script>
+    var userName = prompt("Ketikkan nama Anda!");
+    document.getElementById("username").innerText = userName;
+  </script>
+
+  <!-- my javascript -->
+  <script src="./js/scripts.js"></script>
+
+</body>
+
+</html>
